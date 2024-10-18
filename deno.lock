@@ -8,6 +8,7 @@
     "jsr:@std/cli@^1.0.6": "1.0.6",
     "jsr:@std/internal@^1.0.4": "1.0.4",
     "jsr:@std/io@0.225": "0.225.0",
+    "npm:@inkjs/ui@2": "2.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
     "npm:fullscreen-ink@*": "0.0.2_react@18.3.1",
     "npm:fullscreen-ink@^0.0.2": "0.0.2_react@18.3.1",
     "npm:ink-big-text@*": "2.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
@@ -16,6 +17,7 @@
     "npm:ink-gradient@3": "3.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
     "npm:ink-select-input@*": "6.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
     "npm:ink-select-input@6": "6.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
+    "npm:ink-ui@*": "0.4.0",
     "npm:ink@*": "5.0.1_react@18.3.1",
     "npm:ink@^5.0.1": "5.0.1_react@18.3.1",
     "npm:react@*": "18.3.1",
@@ -50,6 +52,16 @@
       "dependencies": [
         "ansi-styles@6.2.1",
         "is-fullwidth-code-point@4.0.0"
+      ]
+    },
+    "@inkjs/ui@2.0.0_ink@5.0.1__react@18.3.1_react@18.3.1": {
+      "integrity": "sha512-5+8fJmwtF9UvikzLfph9sA+LS+l37Ij/szQltkuXLOAXwNkBX9innfzh4pLGXIB59vKEQUtc6D4qGvhD7h3pAg==",
+      "dependencies": [
+        "chalk@5.3.0",
+        "cli-spinners",
+        "deepmerge",
+        "figures",
+        "ink"
       ]
     },
     "@types/gradient-string@1.1.6": {
@@ -108,6 +120,9 @@
         "restore-cursor"
       ]
     },
+    "cli-spinners@3.2.0": {
+      "integrity": "sha512-pXftdQloMZzjCr3pCTIRniDcys6dDzgpgVhAHHk6TKBDbRuP1MkuetTF5KSv4YUutbOPa7+7ZrAJ2kVtbMqyXA=="
+    },
     "cli-truncate@4.0.0": {
       "integrity": "sha512-nPdaFdQ0h/GEigbPClz11D0v/ZJEwxmeVZGeMo3Z5StPtUTkA9o1lD6QwoirYiSDzbcwn2XcjwmCp68W1IS4TA==",
       "dependencies": [
@@ -132,6 +147,9 @@
     },
     "convert-to-spaces@2.0.1": {
       "integrity": "sha512-rcQ1bsQO9799wq24uE5AM2tAILy4gXGIK/njFWcVQkGNZ96edlpY+A7bjwvzjYvLDyzmG1MmMLZhpcsb+klNMQ=="
+    },
+    "deepmerge@4.3.1": {
+      "integrity": "sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A=="
     },
     "define-property@1.0.0": {
       "integrity": "sha512-cZTYKFWspt9jZsMscWo8sc/5lbPC9Q0N5nBLgb+Yd915iL3udB1uFgS3B8YCx66UVHq018DAVFoee7x+gxggeA==",
@@ -214,6 +232,9 @@
         "react",
         "to-rotated"
       ]
+    },
+    "ink-ui@0.4.0": {
+      "integrity": "sha512-n9Zif1V/c3foSVCmbbU2/HUXwJFZpZUQlX1fowx1FQ8gCsHKXtokeHr+W4+oLnRoPK2ykT7m1D2UVPBKu8IgYg=="
     },
     "ink@5.0.1_react@18.3.1": {
       "integrity": "sha512-ae4AW/t8jlkj/6Ou21H2av0wxTk8vrGzXv+v2v7j4in+bl1M5XRMVbfNghzhBokV++FjF8RBDJvYo+ttR9YVRg==",
@@ -468,6 +489,7 @@
       "jsr:@std/assert@1",
       "jsr:@std/cli@^1.0.6",
       "jsr:@std/io@0.225",
+      "npm:@inkjs/ui@2",
       "npm:fullscreen-ink@^0.0.2",
       "npm:ink-big-text@2",
       "npm:ink-gradient@3",

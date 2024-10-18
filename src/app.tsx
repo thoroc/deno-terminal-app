@@ -1,14 +1,15 @@
-import React, { useState } from 'npm:react';
-import { useApp } from 'npm:ink';
-import { Item } from 'npm:ink-select-input/build/SelectInput';
-import { SideBar } from './components/side-bar.tsx';
-import MainLayout from './layout.tsx';
-import ContentPane from './components/content-pane.tsx';
+import React, { useState } from "npm:react";
+import { useApp } from "npm:ink";
+import { Item } from "npm:ink-select-input/build/SelectInput";
+import { SideBar } from "./components/side-bar.tsx";
+import MainLayout from "./layout.tsx";
+import ContentPane from "./components/content-pane.tsx";
 
+// const navItems: Item<string>[] = [
 const navItems: Item<string>[] = [
-  { label: 'Pane 1', value: 'pane_one' },
-  { label: 'Pane 2', value: 'pane_two' },
-  { label: 'Exit', value: 'exit' },
+  { label: "Pane 1", value: "pane_one" },
+  { label: "Pane 2", value: "pane_two" },
+  { label: "Exit", value: "exit" },
 ];
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
   const { exit } = useApp();
 
   const onNavItemSlected = (item: Item<string>) => {
-    if (item.value === 'exit') {
+    if (item.value === "exit") {
       exit();
     } else {
       setCUrrentNavItem(item);
@@ -26,17 +27,17 @@ const App = () => {
   return (
     <MainLayout>
       <SideBar navItems={navItems} onSelect={onNavItemSlected} />
-      {currentNavItem?.value === 'pane_one' && (
+      {currentNavItem?.value === "pane_one" && (
         <ContentPane
-          name={'retro'}
-          text={'Pane 1'}
+          name={"retro"}
+          text={currentNavItem.label}
           content={"I'm the content area one"}
         />
       )}
-      {currentNavItem?.value === 'pane_two' && (
+      {currentNavItem?.value === "pane_two" && (
         <ContentPane
-          name={'rainbow'}
-          text={'Pane 1'}
+          name={"rainbow"}
+          text={currentNavItem.label}
           content={"I'm the content area two"}
         />
       )}
