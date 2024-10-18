@@ -8,8 +8,13 @@
     "jsr:@std/cli@^1.0.6": "1.0.6",
     "jsr:@std/internal@^1.0.4": "1.0.4",
     "jsr:@std/io@0.225": "0.225.0",
+    "npm:fullscreen-ink@*": "0.0.2_react@18.3.1",
+    "npm:fullscreen-ink@^0.0.2": "0.0.2_react@18.3.1",
+    "npm:ink-big-text@*": "2.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
     "npm:ink-big-text@2": "2.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
+    "npm:ink-gradient@*": "3.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
     "npm:ink-gradient@3": "3.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
+    "npm:ink-select-input@*": "6.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
     "npm:ink-select-input@6": "6.0.0_ink@5.0.1__react@18.3.1_react@18.3.1",
     "npm:ink@*": "5.0.1_react@18.3.1",
     "npm:ink@^5.0.1": "5.0.1_react@18.3.1",
@@ -147,6 +152,13 @@
       "integrity": "sha512-d+l3qxjSesT4V7v2fh+QnmFnUWv9lSpjarhShNTgBOfA0ttejbQUAlHLitbjkoRiDulW0OPoQPYIGhIC8ohejg==",
       "dependencies": [
         "is-unicode-supported"
+      ]
+    },
+    "fullscreen-ink@0.0.2_react@18.3.1": {
+      "integrity": "sha512-5AiV01q8EfOvG2BrYlmNQtUxDSEBf4p8EN+3R0GRvdDKSh2sphUE+7UKTMMq4qMWq1XuhcJB7TGR8O+UD5VyQw==",
+      "dependencies": [
+        "ink",
+        "react"
       ]
     },
     "function-bind@1.1.2": {
@@ -456,6 +468,7 @@
       "jsr:@std/assert@1",
       "jsr:@std/cli@^1.0.6",
       "jsr:@std/io@0.225",
+      "npm:fullscreen-ink@^0.0.2",
       "npm:ink-big-text@2",
       "npm:ink-gradient@3",
       "npm:ink-select-input@6",
